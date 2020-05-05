@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.container h1 {
+  position: absolute;
+  color: white;
+  font-weight: 800;
+  font-family: 'Quicksand';
+}
+
+.container h1:nth-child(1)
+{
+  color: transparent;
+  -webkit-text-stroke: 1px #227093;
+}
+
+.container h1:nth-child(2)
+{
+  color: #227093;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(0% 44%, 14% 41%, 30% 46%, 46% 53%, 62% 57%, 77% 56%, 87% 51%, 99% 48%, 99% 99%, 0% 99%);
+  }
+  50% {
+    clip-path: polygon(0 61%, 17% 63%, 31% 60%, 45% 53%, 56% 46%, 73% 44%, 87% 44%, 99% 48%, 99% 99%, 0% 99%);
+  }
+}

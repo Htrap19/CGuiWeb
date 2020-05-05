@@ -1,0 +1,45 @@
+.docs-container {
+  width: 100%;
+}
+
+.docs-container h2 {
+  text-align: center;
+  color: #3d3d3d;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+.docs-child-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 2%;
+}
+
+.docs-card-container {
+  margin: 10px;
+}
+
+.docs-card-container h3 {
+  text-align: start;
+  font-family: 'Quicksand';
+  color: #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  font-weight: 500;
+}
+
+.docs-card-container h4 {
+  text-align: center;
+  font-family: 'Quicksand';
+  color: #34495e;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+.docs-card-container h4:active {
+  transform: scale(0.95);
+}

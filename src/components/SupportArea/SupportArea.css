@@ -1,0 +1,55 @@
+.supportarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e272e;
+}
+
+.supportarea > h2 {
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: white;
+}
+
+.supportarea .content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.content > div {
+  position: relative;
+}
+
+.image > img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s;
+  opacity: 1;
+}
+
+.image > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image > img:hover {
+  opacity: 1;
+}
+
+.image > img:hover:nth-child(1) {
+  opacity: 0;
+}
