@@ -24,6 +24,19 @@
   vertical-align: 50%;
 }
 
+.navbar > #menu {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #227093;
+  z-index: 1;
+  border-radius: 100%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+}
+
 .navbar ul {
   float: right;
   margin-right: 1%;
@@ -58,4 +71,14 @@
   background-color: #4b4b4b;
   color: white;
   font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar > #menu {
+    display: block;
+  }
 }

@@ -25,7 +25,7 @@
 .container h1:nth-child(2)
 {
   color: #227093;
-  animation: wave 4s ease-in-out infinite;
+  animation: wave 1s ease-in-out infinite;
 }
 
 @keyframes wave {

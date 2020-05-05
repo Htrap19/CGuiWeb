@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css'
 import logo from './user-interface.jpg';
+import menu from './menu.png';
 import { NavbarItems } from './NavbarItems';
 
 const Navbar = ({ onNavbarItemChange }) => {
@@ -9,6 +10,7 @@ const Navbar = ({ onNavbarItemChange }) => {
       <nav className="navbar">
         <img alt="logo" src={logo}/>
         <label>C Gui</label>
+        <img id="menu" src={menu} alt="menu" />
         <ul>
           {
             NavbarItems.map((data, i) => {
