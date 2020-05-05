@@ -25,7 +25,7 @@
 }
 
 .navbar > #menu {
-  display: none;
+  visibility: hidden;
   position: fixed;
   bottom: 2%;
   right: 2%;
@@ -79,6 +79,6 @@
   }
 
   .navbar > #menu {
-    display: block;
+    visibility: visible;
   }
 }
