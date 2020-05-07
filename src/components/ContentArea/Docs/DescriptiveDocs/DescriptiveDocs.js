@@ -69,11 +69,11 @@ const checkEnums = (data) => {
 }
 
 const getDiscriptiveDocs = async (activearea) => {
-  return (await fetch(`http://localhost:3001/docs/${activearea}`)).json();
+  return (await fetch(`https://cguiwebapi.herokuapp.com/docs/${activearea}`)).json();
 }
 
 const getUsage = async (activearea) => {
-  return (await fetch(`http://localhost:3001/usage/${activearea}`)).json();
+  return (await fetch(`https://cguiwebapi.herokuapp.com/usage/${activearea}`)).json();
 }
 
 const SyntaxHighlight = (code) => {

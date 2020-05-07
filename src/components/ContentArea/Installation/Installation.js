@@ -3,7 +3,7 @@ import './Installation.css';
 import Spinner from '../../Spinner/Spinner'
 
 const getDownloadsInfo = async () => {
-  return (await fetch('http://localhost:3001/installation/downloadinfo')).json();
+  return (await fetch('https://cguiwebapi.herokuapp.com/installation/downloadinfo')).json();
 }
 
 const downloadsContentArea = ( InstallationItems ) => {

@@ -4,7 +4,7 @@ import DescriptiveDocs from './DescriptiveDocs/DescriptiveDocs';
 import Spinner from '../../Spinner/Spinner';
 
 const getDocsList = async () => {
-  const res = await fetch('http://localhost:3001/docs/list')
+  const res = await fetch('https://cguiwebapi.herokuapp.com/docs/list')
   const data = await res.json();
 
   const finalContent = [];
