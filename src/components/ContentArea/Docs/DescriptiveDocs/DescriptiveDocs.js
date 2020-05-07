@@ -145,16 +145,16 @@ const contentArea = (activearea, onBackButtonClicked, DescriptiveDocsItems, Usag
                 <h2>Usage</h2>
                 <div className="code-container">
                   {
-                    Usage.examples.map((example, i) => {
+                    Usage.examples.map((obj, i) => {
                       return (
                         <div className="content">
                           <div className="code-session">
                             <label>Example</label>
-                            <code dangerouslySetInnerHTML={{ __html: SyntaxHighlight(example) }} id="code"></code>
+                            <code dangerouslySetInnerHTML={{ __html: SyntaxHighlight(obj.example) }} id="code"></code>
                           </div>
                           <div className="result-session">
                             <label>Result</label>
-                            <img src={Usage.results[i].imgsrc} alt="result"/>
+                            <img src={obj.resultimgsrc} alt="result"/>
                           </div>
                         </div>
                       )
