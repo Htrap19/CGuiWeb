@@ -17,7 +17,7 @@
 .navbar > label {
   color: #3d3d3d;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Quicksand';
   font-size: larger;
   margin-left: 10px;
@@ -63,13 +63,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  bottom: 30px;
+  bottom: 10px;
   right: 55px;
   visibility: hidden;
   background-color: #227093;
   border-radius: 4%;
   box-shadow: 0px 0px 20px #227093;
   padding: 5%;
+  clip-path: polygon(0% 100%, 0% 0%, 95% 0, 95% 82%, 100% 88%, 95% 94%, 95% 100%);
 }
 
 .popup > .popup-content {
@@ -84,6 +85,7 @@
   font-family: 'Quicksand';
   font-weight: 500;
   margin: 5%;
+  text-shadow: 0px 0px 10px white;
 }
 
 .navbar ul {
